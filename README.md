@@ -1,8 +1,9 @@
 ### DRD Feature Extraction
 
 Decay rate distribution (DRD) is a reverberation based feature. In order to detect DRD feature audio signal isconverted into frequency domain then log magnitude spectrum is taken to get envelop. Then the audio signal is divided into 32 frequency bands. In each frequency bands peaks are detected. Start and stop point of each detected peak selected by pre-defined threshold values. In each frequency bands 10 peaks are detected by taking mean of detected peaks in different frequency bands a feature set is created. The
-size of the feature set is 32. These 32 parameters are statistically analyzed in terms of mean, skewness, standard deviation and kurtosis. 
+size of the feature set is 32. These 32 parameters are statistically analyzed in terms of mean, skewness, standard deviation and kurtosis. The bloak diagram of DRD calculation is fiven below:
 
+![drd](https://user-images.githubusercontent.com/58771064/98449764-8a8aeb80-215c-11eb-89a8-69ce225aba96.png)
 
 
 # Short Time Fourier Transform: 
