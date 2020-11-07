@@ -11,7 +11,7 @@ STFT is used to convert the time domain signal into frequency domain. Output of 
 # Mel Filter Bank:
 A normal frequency scale is transformed to a perceptual (mel) scale byapplying Mel filter bank. That gives a log-magnitude spectrum in a number of frequency bands, with the number of bands Nb as defined by the Mel filter bank.
 
-#Peak Detection:
+# Peak Detection:
 In each frequency bands the number of peaks are available, these peaks are selected by comparing difference between the magnitude of the sample of interest and
 its neighboring samples, which are detected by pre-defined threshold values. Sweeping over the whole length of the signal, the peaks that fulfill the threshold criterion are obtained and considered as the start of the peak and end after a certain predefined period of time.
  # Least Square Fitting + Mean: 
@@ -22,7 +22,8 @@ acoustic environment can be identified by this reverberation based properties. T
  
 The result is a vector mt of length equal to the number of frequency bands Nb, where each vector element represents the mean of the decay distribution within the bands over time mt
 
-Statistics Over bands: There are some more parameters are computed in order to obtain the more information about the decay rate example median, mode, variance, correlation covariance, skewness, kurtosis. By combining all these parameter a feature vector is created is called as Decay rate Distribution (DRD).
+# Statistics Over bands: 
+There are some more parameters are computed in order to obtain the more information about the decay rate example median, mode, variance, correlation covariance, skewness, kurtosis. By combining all these parameter a feature vector is created is called as Decay rate Distribution (DRD).
 
 Median: The median is a nothing but the center value of a numerical data set when the data is sorted into ascending or descending order. Variance: Variance is the measurement of spread of data. it measures how far is the each data point from mean. The procedure for calculating variance is taking square of difference of each number in dataset and mean and it is divided by the number of values in dataset. The formula for variance is
 
